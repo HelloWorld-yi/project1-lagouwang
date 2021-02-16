@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/commen.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/erweima.css">
+</head>
+<!-- style="overflow:-Scroll;overflow-y:hidden" -->
+
+<body>
+    <!-- s=顶部 -->
+    <div class="header">
+        <div class="h_top">
+            <div class="ctr">
+                <div class="h_top_l clearfix fl">
+                    <span class="logou greenColor fl">拉钩</span>
+                    <span class="nation greenColor fl">全国站</span>
+                    <span class="city fl">[切换城市]</span>
+                    <ul class="ulLis fl">
+                        <li class="changeLi"><a href="javascript:;" id="changeA">首页</a></li>
+                        <li><a href="javascript:;">公司</a></li>
+                        <li><a href="javascript:;">校园</a></li>
+                        <li><a href="javascript:;">言职</a></li>
+                        <li><a href="javascript:;">课程</a></li>
+                    </ul>
+                </div>
+                <div class="h_top_r fr">
+                    <a href="javascript:;" class="login" onclick="logined()"> <span class="login_logo"></span> 登录</a>
+                    <a href="javascript:;" onclick="regist()"> <span class="line"></span> 注册</a>
+                    <a href="javascript:;" class="greenColor"> <span class="app"></span> 拉钩APP</a>
+                    <a href="login.html">进入企业版</a>
+                </div>
+            </div>
+        </div>
+        <div class="h_bottom">
+            <div class="ctr clearfix">
+                <div class="bottom_l fl">
+                    <span></span>
+                    <div>
+                        <span></span>
+                        <p>755585家公司 | 6247033个职位，在拉钩等你</p>
+                    </div>
+                </div>
+                <div class="bottom_r fr">
+                    <div class="btn">
+                        <input type="tel" placeholder="输入手机号" class="tel" onfocus="fnUnShow(this)"
+                            onblur="fnShow(this)">
+                        <p class="get">
+                            <input type="text" placeholder="验证码" class="yanzheng" onfocus="fnUnShow(this)"
+                                onblur="fnShow(this)">
+                            <button class="greenColor">获取</button>
+                        </p>
+                        <input type="submit" value="登录/注册">
+                    </div>
+                </div>
+            </div>
+            <label for="" onclick="display(this)">×</label>
+            <img src="mainimg/lgerweima.png" alt="" class="erweimaApp">
+        </div>
+    </div>
+    <!-- e=顶部 -->
+
+    <!-- s=搜索 -->
+    <div class="search">
+        <div class="search_main ctr">
+            <div class="search_main_input ctr">
+                <input type="text" placeholder="搜索职位、公司或地点" class="sear" onblur="fnShow(this)" onfocus="fnUnShow(this)">
+                <button>搜索</button>
+                <ul>
+                    <li><a href="javascript:;">热门搜索：</a></li>
+                    <li><a href="javascript:;">24小时极速入职</a></li>
+                    <li><a href="javascript:;">名企校招早班车</a></li>
+                    <li><a href="javascript:;">java面试</a></li>
+                    <li><a href="javascript:;">架构设计</a></li>
+                    <li><a href="javascript:;">数据分析</a></li>
+                    <li><a href="javascript:;">PHP</a></li>
+                    <li><a href="javascript:;">C++</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- e=搜索 -->
+
+    <!-- s=轮播 -->
+    <div class="lunbo">
+        <div class="lunbo_main ctr clearfix">
+            <div class="lunbo_main_l fl">
+                <ul class="lunbo_main_l_ul">
+                    <li>
+                        <b>技术</b>
+                        <a href="javascript:;">Java</a>
+                        <a href="javascript:;">PHP</a>
+                        <a href="javascript:;">C++</a>
+                        <a href="javascript:;">区块链</a>
+                        <span>&gt;</span>
+                        <div class="more" style="display: none;">
+                            <!-- 整个扩展的范围 -->
+                            <dl>
+                                <dt>后端开发</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">Java</a>
+                                    <a href="javascript:;" class="greenColor">C++</a>
+                                    <a href="javascript:;" class="greenColor">PHP</a>
+                                    <a href="javascript:;" class="greenColor">数据挖掘</a>
+                                    <a href="javascript:;">搜索算法</a>
+                                    <a href="javascript:;">精准推荐</a>
+                                    <a href="javascript:;">C</a>
+                                    <a href="javascript:;">C#</a>
+                                    <a href="javascript:;">全栈工程师</a>
+                                    <a href="javascript:;">.NET</a>
+                                    <a href="javascript:;" class="greenColor">Python</a>
+                                    <a href="javascript:;">Delphi</a>
+                                    <a href="javascript:;">VB</a>
+                                    <a href="javascript:;">Perl</a>
+                                    <a href="javascript:;">Ruby</a>
+                                    <a href="javascript:;">Node.js</a>
+                                    <a href="javascript:;">Go</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>移动开发</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">HTML5</a>
+                                    <a href="javascript:;" class="greenColor">Android</a>
+                                    <a href="javascript:;" class="greenColor">iOS</a>
+                                    <a href="javascript:;">WP</a>
+                                    <a href="javascript:;">移动开发其它</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>前端开发</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">web前端</a>
+                                    <a href="javascript:;">Flash</a>
+                                    <a href="javascript:;" class="greenColor">html5</a>
+                                    <a href="javascript:;">JavaScript</a>
+                                    <a href="javascript:;">U3D</a>
+                                    <a href="javascript:;">COCOS2D-X</a>
+                                    <a href="javascript:;">前端开发其它</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>人工智能</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">深度学习</a>
+                                    <a href="javascript:;" class="greenColor">机器学习</a>
+                                    <a href="javascript:;">图像处理</a>
+                                    <a href="javascript:;">图像识别</a>
+                                    <a href="javascript:;">语音识别</a>
+                                    <a href="javascript:;">机器视觉</a>
+                                    <a href="javascript:;">算法工程师</a>
+                                    <a href="javascript:;" class="greenColor">自然语言处理</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>测试</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">测试工程师</a>
+                                    <a href="javascript:;">自动化测试</a>
+                                    <a href="javascript:;">功能测试</a>
+                                    <a href="javascript:;">性能测试</a>
+                                    <a href="javascript:;">测试开发</a>
+                                    <a href="javascript:;">游戏测试</a>
+                                    <a href="javascript:;">白盒测试</a>
+                                    <a href="javascript:;">灰盒测试</a>
+                                    <a href="javascript:;">黑盒测试</a>
+                                    <a href="javascript:;">手机测试</a>
+                                    <a href="javascript:;">硬件测试</a>
+                                    <a href="javascript:;">测试经理</a>
+                                    <a href="javascript:;">测试其它</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>运维</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">运维工程师</a>
+                                    <a href="javascript:;">运维开发工程师</a>
+                                    <a href="javascript:;">网络工程师</a>
+                                    <a href="javascript:;">系统工程师</a>
+                                    <a href="javascript:;">IT支持</a>
+                                    <a href="javascript:;">IDC</a>
+                                    <a href="javascript:;">CDN</a>
+                                    <a href="javascript:;">F5</a>
+                                    <a href="javascript:;">系统管理员</a>
+                                    <a href="javascript:;">病毒分析</a>
+                                    <a href="javascript:;">WEB安全</a>
+                                    <a href="javascript:;">网络安全</a>
+                                    <a href="javascript:;">系统安全</a>
+                                    <a href="javascript:;">运维经理</a>
+                                    <a href="javascript:;">运维其它</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>DBA</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">MySQL</a>
+                                    <a href="javascript:;">SQLServer</a>
+                                    <a href="javascript:;">Oracle</a>
+                                    <a href="javascript:;">DB2</a>
+                                    <a href="javascript:;">MongoDB</a>
+                                    <a href="javascript:;">ETL</a>
+                                    <a href="javascript:;">Hive</a>
+                                    <a href="javascript:;">数据仓库</a>
+                                    <a href="javascript:;">DBA其它</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>高端职位</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">技术经理</a>
+                                    <a href="javascript:;" class="greenColor">技术总监</a>
+                                    <a href="javascript:;" class="greenColor">架构师</a>
+                                    <a href="javascript:;">CTO</a>
+                                    <a href="javascript:;">运维总监</a>
+                                    <a href="javascript:;">技术合伙人</a>
+                                    <a href="javascript:;">项目总监</a>
+                                    <a href="javascript:;">测试总监</a>
+                                    <a href="javascript:;">安全专家</a>
+                                    <a href="javascript:;">高端技术职位其他</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>项目管理</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">项目经理</a>
+                                    <a href="javascript:;">项目助理</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>硬件开发</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">硬件</a>
+                                    <a href="javascript:;">嵌入式</a>
+                                    <a href="javascript:;">自动化</a>
+                                    <a href="javascript:;">单片机</a>
+                                    <a href="javascript:;">电路设计</a>
+                                    <a href="javascript:;">驱动开发</a>
+                                    <a href="javascript:;">系统集成</a>
+                                    <a href="javascript:;">FPGA开发</a>
+                                    <a href="javascript:;">DSP开发</a>
+                                    <a href="javascript:;">ARM开发</a>
+                                    <a href="javascript:;">PCB工艺</a>
+                                    <a href="javascript:;">模具设计</a>
+                                    <a href="javascript:;">热传导</a>
+                                    <a href="javascript:;">材料工程师</a>
+                                    <a href="javascript:;">精益工程师</a>
+                                    <a href="javascript:;">射频工程师</a>
+                                    <a href="javascript:;">硬件开发其他</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>企业软件</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">实施工程师</a>
+                                    <a href="javascript:;">售前工程师</a>
+                                    <a href="javascript:;">售后工程师</a>
+                                    <a href="javascript:;">BI工程师</a>
+                                    <a href="javascript:;">企业软件其他</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <b>产品</b>
+                        <a href="javascript:;">产品总监</a>
+                        <a href="javascript:;">产品经理</a>
+                        <span>&gt;</span>
+                        <div class="more" style="display: none;">
+                            <!-- 整个扩展的范围 -->
+                            <dl>
+                                <dt>产品经理</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">产品经理</a>
+                                    <a href="javascript:;">网页产品经理</a>
+                                    <a href="javascript:;">移动产品经理</a>
+                                    <a href="javascript:;">产品助理</a>
+                                    <a href="javascript:;" class="greenColor">数据产品经理</a>
+                                    <a href="javascript:;">电商产品经理</a>
+                                    <a href="javascript:;" class="greenColor">游戏策划</a>
+                                    <a href="javascript:;">产品实习生</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>产品设计师</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">网页产品设计师</a>
+                                    <a href="javascript:;">无线产品设计师</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>高端职业</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">产品部经理</a>
+                                    <a href="javascript:;" class="greenColor">产品总监</a>
+                                    <a href="javascript:;">游戏制作人</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <b>设计</b>
+                        <a href="javascript:;">UI设计师</a>
+                        <a href="javascript:;">交互设计</a>
+                        <a href="javascript:;">网页设计师</a>
+                        <span>&gt;</span>
+                        <div class="more" style="display: none;">
+                            <!-- 整个扩展的范围 -->
+                            <dl>
+                                <dt>视觉设计</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">视觉设计师</a>
+                                    <a href="javascript:;" class="greenColor">网页设计师</a>
+                                    <a href="javascript:;">Flash设计师</a>
+                                    <a href="javascript:;">APP设计师</a>
+                                    <a href="javascript:;" class="greenColor">UI设计师</a>
+                                    <a href="javascript:;" class="greenColor">平面设计师</a>
+                                    <a href="javascript:;">美术设计师（2D/3D）</a>
+                                    <a href="javascript:;">广告设计师</a>
+                                    <a href="javascript:;">多媒体设计师</a>
+                                    <a href="javascript:;">原画师</a>
+                                    <a href="javascript:;">游戏特效</a>
+                                    <a href="javascript:;">游戏界面设计师</a>
+                                    <a href="javascript:;">游戏场景</a>
+                                    <a href="javascript:;">游戏角色</a>
+                                    <a href="javascript:;">游戏动作</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>交互设计</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">交互设计师</a>
+                                    <a href="javascript:;">无线交互设计师</a>
+                                    <a href="javascript:;">网页交互设计师</a>
+                                    <a href="javascript:;">硬件交互设计师</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>用户研究</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">数据分析师</a>
+                                    <a href="javascript:;">用户研究员</a>
+                                    <a href="javascript:;">游戏数值策划</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>高端职位</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">设计经理/主管</a>
+                                    <a href="javascript:;">设计总监</a>
+                                    <a href="javascript:;">视觉设计经理/主管</a>
+                                    <a href="javascript:;">视觉设计总监</a>
+                                    <a href="javascript:;">交互设计经理/主管</a>
+                                    <a href="javascript:;">交互设计总监</a>
+                                    <a href="javascript:;">用户研究经理/主管</a>
+                                    <a href="javascript:;">用户研究总监</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <b>运营</b>
+                        <a href="javascript:;">新媒体运营</a>
+                        <a href="javascript:;">编辑</a>
+                        <a href="javascript:;">数据运营</a>
+                        <span>&gt;</span>
+                        <div class="more" style="display: none;">
+                            <!-- 整个扩展的范围 -->
+                            <dl>
+                                <dt>运营</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">用户运营</a>
+                                    <a href="javascript:;">产品运营</a>
+                                    <a href="javascript:;" class="greenColor">数据运营</a>
+                                    <a href="javascript:;">内容运营</a>
+                                    <a href="javascript:;">活动运营</a>
+                                    <a href="javascript:;">商家运营</a>
+                                    <a href="javascript:;">品类运营</a>
+                                    <a href="javascript:;">游戏运营</a>
+                                    <a href="javascript:;">网络推广</a>
+                                    <a href="javascript:;">运营专员</a>
+                                    <a href="javascript:;">网店运营</a>
+                                    <a href="javascript:;" class="greenColor">新媒体运营</a>
+                                    <a href="javascript:;">海外运营</a>
+                                    <a href="javascript:;">运营经理</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>编辑</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">副主编</a>
+                                    <a href="javascript:;">内容编辑</a>
+                                    <a href="javascript:;">文案策划</a>
+                                    <a href="javascript:;">记者</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>客服</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">售前咨询</a>
+                                    <a href="javascript:;">售后客服</a>
+                                    <a href="javascript:;">淘宝客服</a>
+                                    <a href="javascript:;">客服经理</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>高端职位</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">主编</a>
+                                    <a href="javascript:;" class="greenColor">运营总监</a>
+                                    <a href="javascript:;">COO</a>
+                                    <a href="javascript:;">客服经理</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <b>市场</b>
+                        <a href="javascript:;">市场营销</a>
+                        <a href="javascript:;">市场推广</a>
+                        <a href="javascript:;">市场策划</a>
+                        <span>&gt;</span>
+                        <div class="more" style="display: none;">
+                            <!-- 整个扩展的范围 -->
+                            <dl>
+                                <dt>市场/营销</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">市场营销</a>
+                                    <a href="javascript:;" class="greenColor">市场策划</a>
+                                    <a href="javascript:;">市场顾问</a>
+                                    <a href="javascript:;">商务渠道</a>
+                                    <a href="javascript:;">商业数据分析</a>
+                                    <a href="javascript:;">活动策划</a>
+                                    <a href="javascript:;">网络营销</a>
+                                    <a href="javascript:;">海外市场</a>
+                                    <a href="javascript:;">商务专员</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>媒介/公关</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">政府关系</a>
+                                    <a href="javascript:;">品牌公关</a>
+                                    <a href="javascript:;">广告协调</a>
+                                    <a href="javascript:;">媒介投放</a>
+                                    <a href="javascript:;">媒介合作</a>
+                                    <a href="javascript:;">媒介顾问</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>品牌/广告</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">广告创意</a>
+                                    <a href="javascript:;">广告制作</a>
+                                    <a href="javascript:;" class="greenColor">广告文案</a>
+                                    <a href="javascript:;" class="greenColor">广告投放</a>
+                                    <a href="javascript:;">广告定价</a>
+                                    <a href="javascript:;">广告专员</a>
+                                    <a href="javascript:;">品牌合作</a>
+                                    <a href="javascript:;">品牌策划</a>
+                                    <a href="javascript:;">品牌专员</a>
+                                    <a href="javascript:;">美术指导</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>渠道/推广</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">市场推广</a>
+                                    <a href="javascript:;">渠道推广</a>
+                                    <a href="javascript:;" class="greenColor">SEO</a>
+                                    <a href="javascript:;" class="greenColor">SEM</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>高端职位</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">策划经理</a>
+                                    <a href="javascript:;">媒介经理</a>
+                                    <a href="javascript:;">市场总监</a>
+                                    <a href="javascript:;">公关总监</a>
+                                    <a href="javascript:;">媒介总监</a>
+                                    <a href="javascript:;">创意总监</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <b>销售</b>
+                        <a href="javascript:;">销售专员</a>
+                        <a href="javascript:;">销售经理</a>
+                        <a href="javascript:;">销售总监</a>
+                        <span>&gt;</span>
+                        <div class="more" style="display: none;">
+                            <!-- 整个扩展的范围 -->
+                            <dl>
+                                <dt>销售</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">销售专员</a>
+                                    <a href="javascript:;">销售顾问</a>
+                                    <a href="javascript:;" class="greenColor">销售经理</a>
+                                    <a href="javascript:;">客户代表</a>
+                                    <a href="javascript:;" class="greenColor">大客户代表</a>
+                                    <a href="javascript:;" class="greenColor">客户经理</a>
+                                    <a href="javascript:;">商务拓展</a>
+                                    <a href="javascript:;">渠道销售</a>
+                                    <a href="javascript:;">代理商销售</a>
+                                    <a href="javascript:;" class="greenColor">电话销售</a>
+                                    <a href="javascript:;">广告销售</a>
+                                    <a href="javascript:;">信用卡销售</a>
+                                    <a href="javascript:;">保险销售</a>
+                                    <a href="javascript:;">销售工程师</a>
+                                    <a href="javascript:;">商务渠道</a>
+                                    <a href="javascript:;">其他销售</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>销售管理</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">销售总监</a>
+                                    <a href="javascript:;">商务总监</a>
+                                    <a href="javascript:;">区域总监</a>
+                                    <a href="javascript:;">城市经理</a>
+                                    <a href="javascript:;">团队经理</a>
+                                    <a href="javascript:;">销售VP</a>
+                                    <a href="javascript:;">商务主管</a>
+                                    <a href="javascript:;">其他销售管理职位</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <b>职能</b>
+                        <a href="javascript:;">HR</a>
+                        <a href="javascript:;">行政</a>
+                        <a href="javascript:;">财务</a>
+                        <a href="javascript:;">审计</a>
+                        <span>&gt;</span>
+                        <div class="more" style="display: none;">
+                            <!-- 整个扩展的范围 -->
+                            <dl>
+                                <dt>人力资源</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">人力资源</a>
+                                    <a href="javascript:;">招聘</a>
+                                    <a href="javascript:;">HRBP</a>
+                                    <a href="javascript:;">人事/HR</a>
+                                    <a href="javascript:;">培训经理</a>
+                                    <a href="javascript:;">薪资福利经理</a>
+                                    <a href="javascript:;">绩效考核经理</a>
+                                    <a href="javascript:;">员工关系</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>行政</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">助理</a>
+                                    <a href="javascript:;">前台</a>
+                                    <a href="javascript:;" class="greenColor">行政</a>
+                                    <a href="javascript:;">总助</a>
+                                    <a href="javascript:;">文秘</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>财务</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">会计</a>
+                                    <a href="javascript:;">出纳</a>
+                                    <a href="javascript:;" class="greenColor">财务</a>
+                                    <a href="javascript:;">结算</a>
+                                    <a href="javascript:;">税务</a>
+                                    <a href="javascript:;" class="greenColor">审计</a>
+                                    <a href="javascript:;">风控</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>法务</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">法务</a>
+                                    <a href="javascript:;">律师</a>
+                                    <a href="javascript:;">专利</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>高端职位</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">行政总监/经理</a>
+                                    <a href="javascript:;">财务总监/经理</a>
+                                    <a href="javascript:;">HRD/HRM</a>
+                                    <a href="javascript:;">CFO</a>
+                                    <a href="javascript:;">CEO</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <b>游戏</b>
+                        <a href="javascript:;">小游戏开发</a>
+                        <a href="javascript:;">U3D</a>
+                        <a href="javascript:;">游戏策划</a>
+                        <span>&gt;</span>
+                        <div class="more" style="display: none;">
+                            <!-- 整个扩展的范围 -->
+                            <dl>
+                                <dt>技术开发</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">H5游戏开发</a>
+                                    <a href="javascript:;" class="greenColor">小游戏开发</a>
+                                    <a href="javascript:;">游戏后端开发</a>
+                                    <a href="javascript:;">C++游戏开发</a>
+                                    <a href="javascript:;">FLASH</a>
+                                    <a href="javascript:;">COCOS2D-X</a>
+                                    <a href="javascript:;" class="greenColor">U3D</a>
+                                    <a href="javascript:;">游戏测试</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>产品策划</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;">游戏制作人</a>
+                                    <a href="javascript:;" class="greenColor">游戏产品经理</a>
+                                    <a href="javascript:;">游戏项目经理</a>
+                                    <a href="javascript:;" class="greenColor">游戏策划</a>
+                                    <a href="javascript:;" class="greenColor">剧情设计</a>
+                                    <a href="javascript:;">游戏文案</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>设计</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">游戏动画</a>
+                                    <a href="javascript:;" class="greenColor">游戏原画</a>
+                                    <a href="javascript:;">游戏界面</a>
+                                    <a href="javascript:;">游戏场景</a>
+                                    <a href="javascript:;">游戏角色</a>
+                                    <a href="javascript:;">游戏动作</a>
+                                    <a href="javascript:;">游戏动效</a>
+                                    <a href="javascript:;">游戏美工</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>运营/推广</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">游戏运营</a>
+                                    <a href="javascript:;">游戏编辑</a>
+                                    <a href="javascript:;">游戏推广</a>
+                                    <a href="javascript:;">手游推广</a>
+                                    <a href="javascript:;">页游推广</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>其他</dt>
+                                <dd class="clearfix">
+                                    <a href="javascript:;" class="greenColor">游戏主播</a>
+                                    <a href="javascript:;" class="greenColor">游戏陪练</a>
+                                    <a href="javascript:;">游戏体验</a>
+                                    <a href="javascript:;">电竞主持</a>
+                                    <a href="javascript:;">电竞讲师</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="lunbo_main_r fr">
+                <ul class="lunbo_main_r_cont">
+                    <li>
+                        <a href="javascript:;"><img src="mainimg/banner.JPG" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="mainimg/banner1.JPG" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="mainimg/banner2.JPG" alt=""></a>
+                    </li>
+                </ul>
+                <span class="arrow_l">&lt;</span>
+                <span class="arrow_r">&gt;</span>
+                <ol class="circle">
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- e=轮播 -->
+
+    <!-- s=信息发布内容 -->
+    <div class="cont ctr">
+        <section class="one">
+            <div class="banner">
+                <span class="black" onclick="change(this)">24Hour热门</span>
+                <span class="gray" onclick="change(this)">最新职位</span>
+            </div>
+            <div class="remen">
+                <div class="tixing clearfix">
+                    <span class="fl"></span>
+                    <p class="fl">过去24小时，最多人看过的岗位在这里</p>
+                    <p class="fl greenColor">我知道了</p>
+                </div>
+                <ul class="ulLis shadow clearfix">
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nomarginr">
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nomarginr">
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nomarginr">
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>java开发工程师</p>
+                                        <p>[10:35发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>10k-15k</p>
+                                    </div>
+                                    <p>经验5-10年/大专</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>电商</button>
+                                    <button>移动互联网</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span></span>
+                                <div>
+                                    <p>苏州艾尼斯教育科技有限公司</p>
+                                    <p>教育/未融资/苏州</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="zuixin" style="display: none;">
+                <div class="tixing clearfix">
+                    <span class="fl"></span>
+                    <p class="fl">刚刚才发布的职位！</p>
+                    <p class="fl greenColor">我知道了</p>
+                </div>
+                <ul class="ulLis shadow clearfix">
+                    <li class="shouzhao">
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nomarginr">
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nomarginr">
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nomarginr shouzhao">
+                        <div class="infor">
+                            <div class="infor_top">
+                                <div class="infor_top_info">
+                                    <div class="someinfo">
+                                        <p>算法工程师</p>
+                                        <p>[09:58发布]</p>
+                                        <img src="mainimg/icon_chat.png" alt="">
+                                        <p>20k-40k</p>
+                                    </div>
+                                    <p>经验1-3年/硕士</p>
+                                </div>
+                                <div class="infor_top_btn">
+                                    <button>深度学习</button>
+                                </div>
+                            </div>
+                            <div class="infor_botton">
+                                <span class="nest"></span>
+                                <div>
+                                    <p>西窗科技</p>
+                                    <p>移动互联网，广告营销/不需要融资/上海</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="greenColor">查看更多</button>
+        </section>
+        <section class="one">
+            <div class="banner">
+                <span class="inter">互联网热门公司榜</span>
+            </div>
+            <div class="tixing clearfix">
+                <span class="fl"></span>
+                <p class="fl">互联网行业实力热门企业</p>
+                <p class="fl greenColor">我知道了</p>
+            </div>
+            <ul class="clearfix ulLiss">
+                <li>
+                    <div class="infor">
+                        <div class="infor_top">
+                            <img src="mainimg/maotouy.png" alt="">
+                            <div>
+                                <p>数据堂</p>
+                                <p>数据服务，消费生活/B轮</p>
+                                <p>发掘数据的价值，便利人们的生活，从...</p>
+                            </div>
+                        </div>
+                        <div class="infor_botton">
+                            <span>
+                                <p class="greenColor">20</p>
+                                <p>面试评价</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">5</p>
+                                <p>在招职位</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">100%</p>
+                                <p>简历处理率</p>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="infor">
+                        <div class="infor_top">
+                            <img src="mainimg/maotouy.png" alt="">
+                            <div>
+                                <p>数据堂</p>
+                                <p>数据服务，消费生活/B轮</p>
+                                <p>发掘数据的价值，便利人们的生活，从...</p>
+                            </div>
+                        </div>
+                        <div class="infor_botton">
+                            <span>
+                                <p class="greenColor">20</p>
+                                <p>面试评价</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">5</p>
+                                <p>在招职位</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">100%</p>
+                                <p>简历处理率</p>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="infor">
+                        <div class="infor_top">
+                            <img src="mainimg/maotouy.png" alt="">
+                            <div>
+                                <p>数据堂</p>
+                                <p>数据服务，消费生活/B轮</p>
+                                <p>发掘数据的价值，便利人们的生活，从...</p>
+                            </div>
+                        </div>
+                        <div class="infor_botton">
+                            <span>
+                                <p class="greenColor">20</p>
+                                <p>面试评价</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">5</p>
+                                <p>在招职位</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">100%</p>
+                                <p>简历处理率</p>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nomarginr">
+                    <div class="infor">
+                        <div class="infor_top">
+                            <img src="mainimg/maotouy.png" alt="">
+                            <div>
+                                <p>数据堂</p>
+                                <p>数据服务，消费生活/B轮</p>
+                                <p>发掘数据的价值，便利人们的生活，从...</p>
+                            </div>
+                        </div>
+                        <div class="infor_botton">
+                            <span>
+                                <p class="greenColor">20</p>
+                                <p>面试评价</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">5</p>
+                                <p>在招职位</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">100%</p>
+                                <p>简历处理率</p>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="infor">
+                        <div class="infor_top">
+                            <img src="mainimg/maotouy.png" alt="">
+                            <div>
+                                <p>数据堂</p>
+                                <p>数据服务，消费生活/B轮</p>
+                                <p>发掘数据的价值，便利人们的生活，从...</p>
+                            </div>
+                        </div>
+                        <div class="infor_botton">
+                            <span>
+                                <p class="greenColor">20</p>
+                                <p>面试评价</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">5</p>
+                                <p>在招职位</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">100%</p>
+                                <p>简历处理率</p>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="infor">
+                        <div class="infor_top">
+                            <img src="mainimg/maotouy.png" alt="">
+                            <div>
+                                <p>数据堂</p>
+                                <p>数据服务，消费生活/B轮</p>
+                                <p>发掘数据的价值，便利人们的生活，从...</p>
+                            </div>
+                        </div>
+                        <div class="infor_botton">
+                            <span>
+                                <p class="greenColor">20</p>
+                                <p>面试评价</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">5</p>
+                                <p>在招职位</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">100%</p>
+                                <p>简历处理率</p>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="infor">
+                        <div class="infor_top">
+                            <img src="mainimg/maotouy.png" alt="">
+                            <div>
+                                <p>数据堂</p>
+                                <p>数据服务，消费生活/B轮</p>
+                                <p>发掘数据的价值，便利人们的生活，从...</p>
+                            </div>
+                        </div>
+                        <div class="infor_botton">
+                            <span>
+                                <p class="greenColor">20</p>
+                                <p>面试评价</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">5</p>
+                                <p>在招职位</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">100%</p>
+                                <p>简历处理率</p>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="nomarginr">
+                    <div class="infor">
+                        <div class="infor_top">
+                            <img src="mainimg/maotouy.png" alt="">
+                            <div>
+                                <p>数据堂</p>
+                                <p>数据服务，消费生活/B轮</p>
+                                <p>发掘数据的价值，便利人们的生活，从...</p>
+                            </div>
+                        </div>
+                        <div class="infor_botton">
+                            <span>
+                                <p class="greenColor">20</p>
+                                <p>面试评价</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">5</p>
+                                <p>在招职位</p>
+                            </span>
+                            <span>
+                                <p class="greenColor">100%</p>
+                                <p>简历处理率</p>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="greenColor">查看更多</button>
+        </section>
+    </div>
+    <!-- e=信息发布内容 -->
+
+    <!-- s=友情链接 -->
+    <div class="friendly ctr">
+        <div class="banner">
+            <span>友情链接</span>
+        </div>
+        <ul class="clearfix">
+            <li><a href="javascript:;">拉勾网</a></li>
+            <li><a href="javascript:;">教师网</a></li>
+            <li><a href="javascript:;">招聘</a></li>
+            <li><a href="javascript:;">app下载</a></li>
+            <li><a href="javascript:;">求职网站</a></li>
+            <li><a href="javascript:;">java课</a></li>
+            <li><a href="javascript:;">架构课</a></li>
+            <li><a href="javascript:;">招聘系统</a></li>
+            <li><a href="javascript:;">中大网校</a></li>
+            <li><a href="javascript:;">教师招聘</a></li>
+            <li><a href="javascript:;">人人都是产品经理</a></li>
+            <li><a href="javascript:;">新疆人才网</a></li>
+            <li><a href="javascript:;">研究报告</a></li>
+            <li><a href="javascript:;">互联网的一些事</a></li>
+            <li>
+                <section>展开</section>
+            </li>
+        </ul>
+    </div>
+    <!-- e=友情链接 -->
+
+    <!-- s=底部信息 -->
+    <div class="footer_top">
+        <div class="footer ctr clearfix">
+            <div class="footer_l fl">
+                <button class="greenColor"><span></span>下载拉勾APP</button>
+                <button class="greenColor"><span></span>微信小程序</button>
+                <div>
+                    <p><span></span>拉勾微信</p>
+                    <p><span></span>拉勾微博</p>
+                </div>
+            </div>
+            <div class="footer_r fr">
+                <dl>
+                    <dt>企业服务</dt>
+                    <dd>招聘抢人宝典</dd>
+                    <dd>公司搜索</dd>
+                    <dd>拉勾APP</dd>
+                </dl>
+                <dl>
+                    <dt>用户帮助</dt>
+                    <dd>帮助中心</dd>
+                    <dd>用户服务协议</dd>
+                    <dd>隐私政策</dd>
+                    <dd>在线提问</dd>
+                </dl>
+                <dl>
+                    <dt>联系方式</dt>
+                    <dd>服务热线：4006 2828 35(9:00-18:00)</dd>
+                    <dd>企业服务邮箱：cc@lagou.com</dd>
+                    <dd>联系我们</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- e=底部信息 -->
+
+    <!-- s=版权信息 -->
+    <div class="footer_info">
+        <div class="ctr">
+            <p>&copy;2018 拉勾网 京ICP备14023790号-2</p>
+            <p><span></span>京公网安备 11010802024043号</p>
+            <div>
+                <span class="fl"></span>
+                <div class="jubao">
+                    <p>违法和不良信息举报</p>
+                    <p>电话：4006 2828 35</p>
+                    <p>邮箱：cc@lagou.com</p>
+                </div>
+            </div>
+            <img src="mainimg/footer_lagou.png" alt="" class="fr">
+        </div>
+    </div>
+    <!-- e=版权信息 -->
+
+    <!-- s=登录注册面板 -->
+    <div class="mask">
+        <div class="mask_login clearfix">
+            <span class="erweima one erweimaOne" onclick="changeImgIndex(this)" onmouseout="grayErweima(this)"
+                onmouseover="colorErweima(this)"></span>
+            <span id="quicklogin" class="look bImg"></span>
+            <a href="javascript:;" class="cloce1">×</a>
+            <div class="mask_content">
+                <span></span>
+                <div class="space">
+                    <input class="ipts ipts1" type="text" placeholder="请输入常用手机号/邮箱">
+                    <div class="yiyanzheng">请输入已验证手机/邮箱</div>
+                </div>
+                <div class="space">
+                    <input class="ipts ipts2" type="password" placeholder="请输入密码">
+                    <div class="shurumima">请输入6-16位密码，字母区分大小写</div>
+                </div>
+                <div>
+                    <a href="javascript:;">手机验证码登录</a>
+                    <a href="javascript:;" class="fr">忘记密码？</a>
+                </div>
+                <input type="submit" value="登录" class="mask_login2 ipts">
+                <a href="javascript:;">立即注册</a>
+                <div class="clearfix">
+                    <p class="fl">第三方账号登录</p>
+                    <div class="fr spans">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mask_zhuce">
+                <div>
+                    <span class="erweima two diannao" onmouseout="grayDiannao(this)" onmouseover="colorDiannao(this)"
+                        onclick="changeImgIndex(this)"></span>
+                    <span id="zhanghaomima" class="unlook"></span>
+                </div>
+                <h3>登录</h3>
+                <img src="mainimg/下载1.png" alt="">
+                <p>微信扫一扫，快速登录</p>
+                <button>立即注册</button>
+            </div>
+        </div>
+        <div class="mask_login1 clearfix">
+            <span class="erweima one erweimaOne" onclick="changeImgIndex1(this)" onmouseout="grayErweima(this)"
+                onmouseover="colorErweima(this)"></span>
+            <span id="quicklogin" class="look bImg"></span>
+            <a href="javascript:;" class="cloce2">×</a>
+            <div class="mask_content1">
+                <span></span>
+                <div class="find">
+                    <div class="job blod bLine" onclick="changeBlod(this)">找工作</div>
+                    <div class="people" onclick="changeBlod(this)">我要招人</div>
+                </div>
+                <div class="findJob">
+                    <div class="space space1">
+                        <span class="fl">0086</span>
+                        <input class="ipts ipts1 ipts3" type="text" placeholder="请输入常用手机号 job"
+                            onfocus="focusBackgroundColor(this)" onblur="blurBackgroundColor(this)">
+                    </div>
+                    <div class="yiyanzheng">请输入已验证手机/邮箱</div>
+                    <div class="space space2">
+                        <input class="ipts ipts2 ipts4" type="password" placeholder="请输入验证码"
+                            onfocus="focusBackgroundColor(this)" onblur="blurBackgroundColor(this)">
+                        <button class="fr" onfocus="focusBackgroundColor(this)"
+                            onblur="blurBackgroundColor(this)">获取验证码</button>
+                    </div>
+                    <div class="shurumima">请输入6位数字验证码</div>
+                </div>
+                <div class="findPeople unlook">
+                    <div class="space space3">
+                        <span class="fl">0086</span>
+                        <input class="ipts ipts1 ipts3" type="text" placeholder="请输入常用手机号 people"
+                            onfocus="focusBackgroundColor(this)" onblur="blurBackgroundColor(this)">
+                    </div>
+                    <div class="yiyanzheng">请输入已验证手机/邮箱</div>
+                    <div class="space space2">
+                        <input class="ipts ipts2 ipts4" type="password" placeholder="请输入验证码"
+                            onfocus="focusBackgroundColor(this)" onblur="blurBackgroundColor(this)">
+                        <button class="fr" onfocus="focusBackgroundColor(this)"
+                            onblur="blurBackgroundColor(this)">获取验证码</button>
+                    </div>
+                    <div class="shurumima">请输入6位数字验证码</div>
+                </div>
+                <input type="submit" value="注册" class="mask_login2 ipts">
+                <a href="javascript:;">直接登录</a>
+                <div class="clearfix">
+                    <p class="fl">第三方账号登录</p>
+                    <div class="fr spans">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="xieyi fl">
+                    注册代表你已同意<a href="javascript:;">「用户协议」</a>及<a href="javascript:;">「隐私政策」</a>
+                </div>
+            </div>
+            <div class="mask_zhuce1">
+                <div>
+                    <span class="erweima two diannao" onmouseout="grayDiannao(this)" onmouseover="colorDiannao(this)"
+                        onclick="changeImgIndex1(this)"></span>
+                    <span id="zhanghaomima" class="unlook"></span>
+                </div>
+                <h3>注册</h3>
+                <img src="mainimg/下载.png" alt="">
+                <p>微信扫一扫，快速注册</p>
+                <button>直接登录</button>
+            </div>
+        </div>
+    </div>
+    <!-- e=登录注册面板 -->
+
+    <!-- 火箭 -->
+    <div class="rockets"></div>
+
+</body>
+<script src="js/animate.js"></script>
+<script src="js/animateTop.js"></script>
+<script src="js/commen.js"></script>
+<script src="js/index.js"></script>
+</html>

@@ -1,0 +1,24 @@
+.erweima {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    margin-right: 0;
+}
+
+.erweimaOne {
+    background-image: url(../mainimg/erweima.svg);
+}
+
+.erweimaColor {
+    background-image: url(../mainimg/erweimacolor.svg);
+}
+
+.diannao {
+    background-image: url(../mainimg/diannao.svg);
+}
+
+.diannaoColor {
+    background-image: url(../mainimg/diannaocolor.svg);
+}

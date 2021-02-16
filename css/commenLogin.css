@@ -1,0 +1,25 @@
+.greenColor {
+    color: #00B38A;
+}
+
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

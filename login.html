@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commenlogin.css">
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <link rel="stylesheet" href="css/erweima.css">
+</head>
+
+<body>
+    <div class="bg">
+        <div class="center">
+            <span class="logo"></span>
+            <div class="login">
+                <div>
+                    <div class="erweima one erweimaOne" onclick="changeImg(this)" onmouseout="grayErweima(this)"
+                        onmouseover="colorErweima(this)">
+                        <!-- onmouseout="grayErweima(this)" onmouseover="colorErweima(this)"  -->
+                    </div>
+                    <div class="erweima two diannao" onclick="changeImg(this)" id="unlook"
+                        onmouseout="grayDiannao(this)" onmouseover="colorDiannao(this)">
+                        <!-- onmouseout="grayDiannao(this)" onmouseover="colorDiannao(this)" -->
+                    </div>
+
+                    <div class="quicklogin"></div>
+                    <div class="zhanghaomima unlook"></div>
+                </div>
+                <div class="login_bottom clearfix">
+                    <div class="login_bottom_l fl divOne">
+                        <span class="greenColor mima" onclick="changeColor(this)" id="mima">密码登录</span>
+                        <span class="gray" onclick="changeColor(this)">验证码登录</span>
+
+                        <div class="wayOne show">
+                            <input type="text" placeholder="请输入常用手机号或邮箱" onfocus="fnUnShow(this)" onblur="fnShow(this)"
+                                class="pho">
+                            <span class="warnOne warnTwo phow">请输入有效的手机/邮箱</span>
+
+                            <input type="password" placeholder="请输入密码" onfocus="fnUnShow(this)" onblur="fnShow(this)"
+                                class="pwd">
+                            <span class="eyes" onclick="openOrClose(this)"></span>
+                            <span class="warnOne warnTwo pwdw">请输入6-16位密码，字母区分大小写</span>
+
+                            <a href="javascript:;" class="greenColor">忘记密码?</a>
+                        </div>
+
+                        <div class="wayTwo unShow">
+                            <span class="placeNber">0086</span>
+                            <input type="text" placeholder="请输入常用手机号" onfocus="fnUnShow(this)" onblur="fnShow(this)"
+                                class="palceTel">
+                            <span class="warnOne warnTwo palceTelw">请输入正确的手机号码</span>
+
+                            <input type="text" placeholder="请输入验证码" onfocus="fnUnShow(this)" onblur="fnShow(this)"
+                                class="inputYZM">
+                            <input type="button" value="获取验证码" class="getYZM">
+                            <span class="warnOne warnTwo inputYZMw">请输入6位数字验证码</span>
+                        </div>
+                        <input type="button" value="登录">
+                    </div>
+
+                    <div class="login_bottom_l fl divTwo unlook">
+                        <img src="mainimg/download.png" alt="">
+                        <p>微信扫一扫，快速登录</p>
+                    </div>
+                    <span>or</span>
+                    <div class="login_bottom_r fr">
+                        <div class="login_bottom_r_top">
+                            <p>还没有账号</p>
+                            <a href="javascript:;" class="greenColor">立即注册<span></span></a>
+                        </div>
+                        <div class="login_bottom_r_btm">
+                            <p>使用以下账号直接登录</p>
+                            <div class="lay">
+                                <a href="javascript:;"><span class="weibo"></span></a>
+                                <a href="javascript:;"><span class="weixin"></span></a>
+                                <a href="javascript:;"><span class="qq"></span></a>
+                                <a href="javascript:;"><span class="baidu"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/commen.js"></script>
+<script src="js/login.js"></script>
+<script>
+    let telValue = document.querySelector(".pho");
+    let pwdValue = document.querySelector(".pwd");
+    let phow = document.querySelector(".phow");
+    let pwdw = document.querySelector(".pwdw");
+    let mima = document.querySelector(".mima");
+    let gray = document.querySelector(".gray");
+    let eyes = document.querySelector(".eyes");
+    let wayOne = document.querySelector(".wayOne");
+    let wayTwo = document.querySelector(".wayTwo");
+    let palceTel = document.querySelector(".palceTel");
+    let palceTelw = document.querySelector(".palceTelw");
+    let inputYZM = document.querySelector(".inputYZM");
+    let inputYZMw = document.querySelector(".inputYZMw");
+    let erweima = document.querySelector(".erweima");
+    let imgUrl = document.defaultView.getComputedStyle(erweima, null).backgroundImage; //得到外部样式中的url
+    let quicklogin = document.querySelector(".quicklogin");
+    let zhanghaomima = document.querySelector(".zhanghaomima");
+</script>
+
+</html>

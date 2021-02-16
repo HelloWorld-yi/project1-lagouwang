@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+.ctr {
+    margin: 0 auto;
+    width: 1206px;
+}
+
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.greenColor {
+    color: #00B38A;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+.bg .login .erweima {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    margin: 5px;
+    margin-right: 0;
+}
+
+.bg .login .erweimaOne {
+    background-image: url(../mainimg/erweima.svg);
+}
+
+.bg .login .erweimaColor {
+    background-image: url(../mainimg/erweimacolor.svg);
+}
+
+.bg .login .diannao {
+    background-image: url(../mainimg/diannao.svg);
+}
+
+.bg .login .diannaoColor {
+    background-image: url(../mainimg/diannaocolor.svg);
+}

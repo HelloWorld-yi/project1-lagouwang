@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            margin: 0 auto;
+            width: 200px;
+            height: 3000px;
+            background-color: pink;
+        }
+        input {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div value="晚上">
+        dd <span>白天</span>
+        <input type="text" value="文本">
+    </div>
+</body>
+<!-- <script>
+    
+        let div = document.querySelector("div");
+        let getComputedStyle = document.defaultView.getComputedStyle(div,null);
+        console.log(getComputedStyle.backgroundImage);
+    
+</script> -->
+<script>
+    let div = document.querySelector("div");
+    let ipt = document.querySelector("input");
+    document.addEventListener("click",function(e){
+        console.log(e.clientX);
+        console.log(e.clientY);
+        console.log("------------------------------");
+        console.log(e.pageX);
+        console.log(e.pageY);
+        console.log("------------------------------");
+        console.log(e.screenX);
+        console.log(e.screenY);
+        console.log("------------------------------");
+    });
+    /* console.log(div.style.width);
+    console.log(document.defaultView.getComputedStyle(div,null).width);
+    console.log(document.defaultView.getComputedStyle(div,null));
+    console.log(div.offsetWidth);
+    console.log(div.offsetParent);
+
+    console.log("---------------");
+    console.log(div.offsetLeft);
+    console.log(ipt.offsetLeft);
+    console.log(ipt.offsetTop); */
+</script>
+</html>
